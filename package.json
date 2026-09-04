@@ -1,0 +1,48 @@
+{
+  "name": "ethical-js-vscode-toolkit",
+  "version": "1.0.0",
+  "description": "Cross-platform ethical JavaScript/VSCode toolkit for iOS, Windows 8.1, and ChromeOS",
+  "main": "dist/index.js",
+  "publisher": "FckWayneAllen0",
+  "type": "module",
+  "engines": {
+    "vscode": "^1.60.0",
+    "node": ">=14.0.0"
+  },
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "lint": "eslint src/**/*.ts --fix",
+    "security-audit": "npm audit --production",
+    "test": "jest",
+    "package-extension": "vsce package --allow-star-engines"
+  },
+  "dependencies": {
+    "eslint": "^8.50.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.2.2",
+    "vscode": "^1.1.37"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.0",
+    "@types/vscode": "^1.80.0",
+    "@typescript-eslint/eslint-plugin": "^6.3.0",
+    "@typescript-eslint/parser": "^6.3.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1"
+  },
+  "keywords": [
+    "javascript",
+    "vscode",
+    "toolkit",
+    "linting",
+    "security",
+    "ethical",
+    "cross-platform",
+    "ios",
+    "windows",
+    "chromeos"
+  ],
+  "license": "MIT"
+}
